@@ -7,3 +7,9 @@ Tools included in this installation script.
  * Nexus
  * SonarQube
 
+How to execute?
+
+```shell
+# main.sh "[Openshift_URL] -u [User] -p [Password]"
+```
+
