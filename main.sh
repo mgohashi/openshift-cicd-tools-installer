@@ -3,9 +3,7 @@
 BASEDIR=$(dirname $(readlink -f  $0))
 
 echo "Logging in openshift..."
-oc login https://minishift:8443 -u developer -p developer >> /dev/null
-#oc login https://ocp.marcosmamorim.com.br:8443 -u mohashi -p r3dh4t1! >> /dev/null
-#oc login https://open.paas.redhat.com:443 -u mohashi -p Fake@339!
+oc login "$1" >> /dev/null
 
 if [ "$?" == "0" ]; then
     echo "Creating cicd project..."
