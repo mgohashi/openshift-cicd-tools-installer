@@ -3,7 +3,7 @@
 BASEDIR=$(dirname $(readlink -f  $0))
 
 echo "Logging in openshift..."
-oc login "$1" >> /dev/null
+oc login $1 >> /dev/null
 
 if [ "$?" == "0" ]; then
     echo "Creating cicd project..."
