@@ -9,7 +9,7 @@ oc new-app postgresql-persistent \
     --param POSTGRESQL_PASSWORD=gogs \
     --param VOLUME_CAPACITY=4Gi \
     --param DATABASE_SERVICE_NAME=postgresql-gogs \
-    -lapp=postgresql-gogs
+    -lapp=gogs
 
 sleep 50s
 

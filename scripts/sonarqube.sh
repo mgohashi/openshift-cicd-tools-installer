@@ -7,7 +7,7 @@ oc new-app postgresql-persistent \
     --param POSTGRESQL_DATABASE=sonar \
     --param VOLUME_CAPACITY=4Gi \
     --param DATABASE_SERVICE_NAME=postgresql-sonar \
-    -lapp=sonarqube_db
+    -lapp=sonarqube
 
 sleep 10s
 
