@@ -7,7 +7,7 @@ oc login $1 >> /dev/null
 
 if [ "$?" == "0" ]; then
     echo "Creating cicd project..."
-    oc new-project mo-cicd
+    oc new-project cicd-tools
 
     echo "Deploying Gogs..."
     source $BASEDIR/scripts/gogs.sh
